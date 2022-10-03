@@ -11,13 +11,10 @@ public class TestCaseGetStatus extends TestCase{
 
     @Override
     public boolean getTestStatus(HashMap<String, Boolean> testResults, String nombreTest){
-        for (Map.Entry<String,Boolean> dato: testResults.entrySet()) {
-            if (nombreTest == dato.getKey() && dato.getValue()){
-                System.out.println("This test status is: OK");
-            } else if (nombreTest == dato.getKey() && !dato.getValue()){
-                System.out.println("This test status is: NOT OK");
-            }
-        }
+        if(testResults.get(nombreTest)){
+            System.out.println("This test status is: OK");
+        }else {
+        System.out.println("This test status is: NOT OK");}
         return false;
     }
 }
