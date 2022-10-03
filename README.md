@@ -5,24 +5,24 @@ Once open, run the Client class with intellij integred runner.
 
 THE OUTPUT SHOULD BE LIKE THIS:
 "***** PRIMERA ITERACION *****
-Test OK, name: TC2\n
-Test OK, name: TC1\n
-Test fail!, name: TC4\n
-Test OK, name: TC4\n
-Test OK, name: TC3\n
-Test OK, name: TC6\n
-Test OK, name: TC5\n
-Test OK, name: TC12\n
-Test OK, name: TC8\n
-Test fail!, name: TC11\n
-Test OK, name: TC11\n
-Test fail!, name: TC7\n
-Test OK, name: TC7\n
-Test OK, name: TC10\n
-Test fail!, name: TC9\n
-Test OK, name: TC9\n
+Test OK, name: TC2
+Test OK, name: TC1
+Test fail!, name: TC4
+Test OK, name: TC4
+Test OK, name: TC3
+Test OK, name: TC6
+Test OK, name: TC5
+Test OK, name: TC12
+Test OK, name: TC8
+Test fail!, name: TC11
+Test OK, name: TC11
+Test fail!, name: TC7
+Test OK, name: TC7
+Test OK, name: TC10
+Test fail!, name: TC9
+Test OK, name: TC9
 ***** SEGUNDA ITERACION *****
-This test will be pushed to jira: TC5 with status: true\n
+This test will be pushed to jira: TC5 with status: true
 ***** TERCERA ITERACION *****
-This test status is: OK\n
+This test status is: OK
 "
