@@ -2,11 +2,9 @@ package testingResults;
 
 import java.util.*;
 
-public class TestData {
-    public HashMap<String, Boolean> testResults = new HashMap<String, Boolean>();
-
-    public void setTestResults(Map<String, Boolean> testResults) {
-        // Format (NombreTest, EstadoTest)
+public class Client {
+    public static void main(String[] args) {
+        HashMap<String, Boolean> testResults = new HashMap<String, Boolean>();
         testResults.put("TC1",true);
         testResults.put("TC2",true);
         testResults.put("TC3",true);
@@ -19,9 +17,19 @@ public class TestData {
         testResults.put("TC10",true);
         testResults.put("TC11",false);
         testResults.put("TC12",true);
+
+        System.out.println("***** PRIMERA ITERACION *****");
+        TestsStatus prueba = new TestsStatus();
+        prueba.getTestResultsStatus(testResults);
+
+        System.out.println("***** SEGUNDA ITERACION *****");
+        TestCaseJira prueba2 = new TestCaseJira();
+        prueba2.pushTest(testResults,"TC5");
+
+        System.out.println("***** TERCERA ITERACION *****");
+        TestCaseGetStatus prueba3 = new TestCaseGetStatus();
+        prueba3.getTestStatus(testResults,"TC3");
     }
 
-    public Map<String, Boolean> getTestResults() {
-        return testResults;
-    }
+
 }
